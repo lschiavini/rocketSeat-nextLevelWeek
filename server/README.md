@@ -11,3 +11,6 @@
 - Rota para listar aulas;
     - Filtrar por matéria, dia da semana, horário;
 
+## TODO
+- Não obtém primeira aula cadastrada, somente a última
+- precisa colocar de aula a aula, bug de quando cria varios campos, não preenche corretamente
