@@ -6,10 +6,10 @@
 * [Project](#project)
 
 ## Display
-![Landing Page](./images/1_landing.png)
-![Study](./images/2_study.png)
-![Give Classes1](./images/3_giveClasses1.png)
-![Give Classes2](./images/3_giveClasses2.png)
+![Landing Page](./images/1_landing.PNG)
+![Study](./images/2_study.PNG)
+![Give Classes1](./images/3_giveClasses1.PNG)
+![Give Classes2](./images/3_giveClasses2.PNG)
 
 
 ## General info
