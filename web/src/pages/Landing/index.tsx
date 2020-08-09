@@ -19,6 +19,11 @@ function Landing() {
             setTotalConnections(total);
         })
     }, []);
+    // useEffect(() => {
+        
+    // }, []); // [] empty means only uses when component mounts
+    //         // with value means useEffect takes effect everytime the variable changes
+
 
     return (
         <div id="page-landing">
