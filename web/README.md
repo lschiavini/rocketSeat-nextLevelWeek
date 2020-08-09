@@ -9,7 +9,7 @@
 ![Landing Page](./images/1_landing.PNG)
 ![Study](./images/2_study.PNG)
 ![Give Classes1](./images/3_giveClasses1.PNG)
-![Give Classes2](./images/3_giveClasses2.PNG)
+![Give Classes2](./images/4_giveClasses2.PNG)
 
 
 ## General info
