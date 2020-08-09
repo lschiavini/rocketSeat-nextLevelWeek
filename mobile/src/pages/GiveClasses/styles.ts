@@ -14,11 +14,11 @@ const styles = StyleSheet.create({
         resizeMode: 'contain'
     },
     title: {
-        fontFamily: 'Poppins_400Regular',
+        fontFamily: 'Archivo_700Bold',
         color: '#FFF',
-        fontSize: 20,
-        lineHeight: 30,
-        marginTop: 80,
+        fontSize: 32,
+        lineHeight: 37,
+        maxWidth: 180,
     },
     titleBold: {
         fontFamily: 'Poppins_600SemiBold',
@@ -36,31 +36,32 @@ const styles = StyleSheet.create({
         padding: 24,
         justifyContent: 'space-between'
     },
-    buttonPrimary: {
-        backgroundColor: '#9871F5',
-    },
-    buttonSecondary: {
-        backgroundColor: '#04D361',
-    },
-    buttonText: {
-        fontFamily: 'Archivo_700Bold',
-        color: '#FFF',
-        fontSize: 20,
-    },
-    
-    totalConnections: {
-        color: '#d4c2ff',
-        fontFamily: 'Poppins_400Regular',
-        fontSize: 12,
-        lineHeight: 20,
-        maxWidth: 140,
-        marginTop: 40,
-    },
     content: {
         flex: 1,
         justifyContent: 'center',
-        resizeMode: 'contain',
-    }
+    },
+    description: {
+        marginTop: 24,
+        color: '#d4c2ff',
+        fontSize: 16,
+        lineHeight: 26,
+        fontFamily: 'Poppins_400Regular',
+        maxWidth: 240,
+    },
+    okButton: {
+        marginVertical: 40,
+        backgroundColor: '#04d361',
+        height: 58,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 8,
+    },
+
+    okButtonText: {
+        color: '#FFF',
+        fontSize: 16,
+        fontFamily: 'Archivo_700Bold',
+    },
 
 });
 
