@@ -9,6 +9,7 @@ import heartOutlineIcon from "../../assets/images/icons/heart-outline.png";
 import unfavouriteIcon from "../../assets/images/icons/unfavorite.png";
 import whatsappIcon from "../../assets/images/icons/whatsapp.png";
 import { useGestureHandlerRef } from '@react-navigation/stack';
+import api from '../../services/api';
 
 export interface Teacher {
     id: number;
@@ -28,8 +29,6 @@ interface TeacherItemProps {
 const TeacherItem: React.FC<TeacherItemProps> = ( { teacher, favorited } ) => {
 
     const [isFavorited, setIsFavorited] = useState(favorited);
-
-
 
     async function handleToggleFavorite() {
         const favorites = await AsyncStorage.getItem('favorites');
@@ -54,6 +53,9 @@ const TeacherItem: React.FC<TeacherItemProps> = ( { teacher, favorited } ) => {
     }
 
     function handleLinkToWhatsApp() {
+        api.post('connections', {
+            user_id: teacher.id,
+        });
         Linking.openURL(`whatsapp://send?phone=+55${teacher.whatsapp}`);
     }
 
