@@ -27,33 +27,33 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
     }
     return (
         <article className="teacher-item">
-                <header>
-                    <img src={teacher.avatar} alt={teacher.name}/>
-                    <div>
-                        <strong>{teacher.name}</strong>
-                        <span>{teacher.subject}</span>
-                    </div>
-                </header>
+            <header>
+                <img src={teacher.avatar} alt={teacher.name}/>
+                <div>
+                    <strong>{teacher.name}</strong>
+                    <span>{teacher.subject}</span>
+                </div>
+            </header>
 
+            <p>
+            {teacher.bio}
+            </p>
+
+            <footer>
                 <p>
-                {teacher.bio}
+                    Preço/hora
+                    <strong>R$ {teacher.cost}</strong>
                 </p>
-
-                <footer>
-                    <p>
-                        Preço/hora
-                        <strong>R$ {teacher.cost}</strong>
-                    </p>
-                    <a 
-                        target="_blank"
-                        onClick={createNewConnection} 
-                        href={`https://wa.me/${teacher.whatsapp}`}
-                    >
-                        <img src={whatsappIcon} alt="WhatsApp"/>
-                        Entrar em contato
-                    </a>
-                </footer>
-            </article>
+                <a 
+                    target="_blank"
+                    onClick={createNewConnection} 
+                    href={`https://wa.me/${teacher.whatsapp}`}
+                >
+                    <img src={whatsappIcon} alt="WhatsApp"/>
+                    Entrar em contato
+                </a>
+            </footer>
+        </article>
     )
 }
 
